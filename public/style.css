@@ -1,0 +1,153 @@
+body {
+  background-image: url("./images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  overflow-x: hidden;
+}
+/* index.ejs */
+h1 {
+  text-align: center;
+  color: rgba(210, 4, 4, 0.737);
+  font-size: 2.5rem;
+}
+.create {
+  margin: 5px auto 0;
+  display: block;
+  width: fit-content;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 100%;
+}
+.post {
+  min-height: 35vh;
+  width: 25%;
+  background-color: transparent;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: 3px solid rgba(2, 2, 71, 0.57);
+}
+h3 {
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+h4 {
+  color: #ffffffee;
+  font-size: 1rem;
+}
+a {
+  color: #ffffffee;
+  text-decoration: none;
+  cursor: pointer;
+  border: 3px solid rgba(2, 2, 71, 0.57);
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 10px 5px;
+}
+/* new.ejs */
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(210, 4, 4, 0.737);
+  border-radius: 4px;
+}
+button {
+  margin: 20px auto 0;
+  display: block;
+  width: fit-content;
+}
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(210, 4, 4, 0.737);
+}
+.delete {
+  margin: 25px 0 0;
+  display: block;
+  width: fit-content;
+  border-radius: 4px;
+}
+/* show.ejs */
+.show {
+  color: aliceblue;
+}
+/* edit.ejs */
+.margin {
+  margin-left: 20px;
+}
+.edit {
+  color: aliceblue;
+}
+form {
+  padding: 0px;
+  box-shadow: none;
+  width: 400px;
+  height: auto;
+}
+#editbox {
+  height: 150px;
+}
+@media (max-width: 900px) {
+  .box {
+    gap: 10vh;
+    width: 100%;
+  }
+  .post {
+    min-height: 40vh;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    margin: 0 20px;
+  }
+  .delete {
+    margin: 20px 0 0;
+    display: block;
+    width: fit-content;
+    border-radius: 4px;
+  }
+  form {
+    padding: 0px;
+    box-shadow: none;
+    width: 290px;
+    height: auto;
+  }
+}
